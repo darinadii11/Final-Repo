@@ -1,0 +1,94 @@
+body {
+    overflow-y: hidden;
+    padding: 0;
+    margin: 0;
+    font-family: Didot;
+    /* background: url(../img/finalwave.png);
+    background-size: 300%; */
+    background: url(../img/bg2copy.png);
+    background-repeat: repeat-x;
+    background-attachment: scroll;
+    background-position: bottom;
+    transition: .5s;
+}
+
+#before {
+    background: #000;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+
+#before:hover,
+#before:active { transition: 0.5s; }
+#before img { width: 250px; }
+#after { display: none; }
+tr { vertical-align: top; margin: 0; }
+table, td, td { margin: 0; padding: 0; border-spacing: 0; }
+
+.block {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.block > h1 { margin-bottom: 0; }
+.block nav { margin-bottom: 150px; }
+.block nav ul li { list-style: none; display: inline; }
+.block nav ul li:nth-child(even) { margin-left: 30px; }
+.block nav ul li a { text-transform: uppercase; text-decoration: none; font-size: 18px; }
+.block nav ul li a:hover { text-decoration: none; }
+.block nav ul li a,
+.block nav ul li a:hover,
+.block nav ul li a:visited { color: #000; }
+.b-100 { width: 100vw; }
+.block img { width: 500px; height: auto; transition: .25s; }
+.block img:hover { transition: .25s;  width:700px;
+    height:auto;
+    z-index:999;}
+.block > h1 { letter-spacing: -1px; font-size: 8em; }
+.block .hover { position: relative; color: #fff; margin-left: 20vw; }
+.block .hover b { font-size: 22px; }
+
+.block .hover .bottom-left {
+    display: none;
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    width: 80%;
+}
+
+.block .text {
+    width: 50%;
+    position: absolute;
+    bottom: 120px;
+    color: #fff;
+    display: none;
+}
+
+.block .text h2 { font-weight: lighter; font-size: 18px; }
+.block .full-height { height: 100vh; margin-top: 0; margin-bottom: 0; }
+.block .full-height img { height: 100vh; margin-bottom: 0; }
+.block span.output-text { position: absolute; left: -100px; z-index: 1001; }
+.block span.output-text h1 { color: #000; word-break: break-word; }
+.last-hover { margin-right: 200px; }
+
+
+.thumbnail:hover {
+    position:relative;
+    width:900px;
+    height:auto;
+    z-index:999;
+}
+
+
+
+
+
+
+
